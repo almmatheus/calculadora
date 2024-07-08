@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1d1d1d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+}
+
+#calculadora{
+    width: 400px;
+    padding: 0.5em;
+    background-color: #c4c4c4;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+#calculadora h3{
+    font-size: 0.8em;
+    font-weight: 300;
+    color: #555;
+}
+
+#operacoes{
+    text-align: right;
+}
+
+#operacao-anterior{
+    color: #777;
+    padding: 0.2em;
+    min-height: 1.6em;
+    /*Comando que quebra o texto no limite de um container.*/
+    overflow-wrap: break-word;
+}
+
+#operacao-atual{
+    min-height: 1.6em;
+    font-size: 3em;
+    font-weight: 700;
+    padding: 0.2em;
+    overflow-wrap: break-word;
+}
+
+#container-botoes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 4px;
+}
+
+#container-botoes button{
+    height: 4em;
+    border: 1px solid transparent;
+    border-radius: 0;
+    font-size: 1.2em;
+    background-color: #dbdbdb;
+    cursor: pointer;
+}
+
+#container-botoes .numero{
+    background-color: #f3f3f3;
+}
+
+#container-botoes button:hover{
+    background-color: #bababa;
+    border-color: #999;
+}
+
+#container-botoes #botao-igual{
+    grid-column: span 2;
+    background-color: #fa420a;
+}
+
+#container-botoes #botao-igual:hover{
+    grid-column: span 2;
+    background-color: #ae2900;
+}
